@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming & Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="viewer.js"></script> <!-- For both broadcaster and viewer -->
+</head>
+
+<body>
+    <h1>Viewer: Video Stream and Chat</h1>
+    <video autoplay id="video"></video>
+    <button id="my-button">View Stream</button> <!-- View Stream for Viewer -->
+
+    <!-- Chat Box -->
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-chat">Send</button>
+    </div>
+</body>
+
+</html>
